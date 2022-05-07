@@ -37,7 +37,7 @@
             fname = patient.name[0].given.join(' ');
             lname = patient.name[0].family.join(' ');
           }
-           patientId = patient.identifier[0].value;
+           patientId = patient.identifier.value;
           console.log(patientId);
           /*
           var height = byCodes('8302-2');
@@ -131,12 +131,12 @@
     $('#gender').html(p.gender);
     $('#birthdate').html(p.birthdate);
     $('#height').html(p.height);
-    /*
+    
     $('#systolicbp').html(p.systolicbp);
     $('#diastolicbp').html(p.diastolicbp);
     $('#ldl').html(p.ldl);
     $('#hdl').html(p.hdl);
-    */
+   
   };
 
 })(window);
