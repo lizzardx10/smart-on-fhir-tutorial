@@ -44,9 +44,12 @@
           <th>Identifier:</th>
           <td id='patientId'></td>
       </table>
-      <h2>Observation Resource</h2>
+      <h2>Testing Resources</h2>
       <table>
         <tr>
+          <th>Test Type:</th>
+          <input type="text" id="testType" name="testType">
+<!--         <tr>
           <th>Height:</th>
           <td id='height'></td>
         </tr>
@@ -66,8 +69,24 @@
         <tr>
           <th>HDL:</th>
           <td id='hdl'></td>
-        </tr>
+        </tr> -->
       </table>
+      <h2>Previous Tests</h2>
+      <table>
+        <tr>
+          <th>Test Type:</th>
+          <td id='testType'></td>
+          
+          <th>ACC ID:</th>
+          <td id='acc_id'></td>
+          
+          <th>Date Received:</th>
+          <td id='testDate'></td>
+          
+          <th>File:</th>
+          <button onclick="downloadFile()">Download Report</button>
+        </tr>
+        
     </div>
     <!-- Required JS files to enable this page to embed within an MPage -->
     <!--
