@@ -37,7 +37,7 @@
             fname = patient.name[0].given.join(' ');
             lname = patient.name[0].family.join(' ');
           }
-           patientId = patient.identifier;
+           patientId = patient.identifier[0].value;
           console.log(patientId);
           /*
           var height = byCodes('8302-2');
