@@ -38,6 +38,7 @@
             lname = patient.name[0].family.join(' ');
           }
            patientId = patient.identifier;
+          console.log(patientId);
           /*
           var height = byCodes('8302-2');
           var systolicbp = getBloodPressureValue(byCodes('55284-4'),'8480-6');
